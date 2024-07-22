@@ -59,17 +59,8 @@ export default class SendMsg extends Vue {
 
     if (!items) {
       items = [
-        '生意淡薄，不如赌搏',
-        '搏一搏，单车变摩托',
-        '又再搏多搏，摩托变饭壳',
-        '多谢老细!',
-        '666',
-        'All佢啦!',
-        '跟佢啦!',
-        '咩啊?',
-        '燶嗮!',
-        '燶唔燶?',
-        '扑街啦',
+        '快点啊，我等得花儿都谢了!',
+        '抓紧all in',
       ];
 
       this.savePresets(items);

@@ -144,7 +144,7 @@ interface ILatestActionData {
 }
 
 const GAME_BASE_SIZE = 1;
-const ACTION_TIME = 30;
+const ACTION_TIME = 60;
 
 @Component({
   components: {

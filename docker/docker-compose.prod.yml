@@ -61,7 +61,7 @@ services:
     environment:
       NODE_ENV: production
     expose:
-      - 7001
+      - 7001:7001
     volumes:
       - ./data/server/logs:/root/logs
       - ./data/server/run:/app/run
