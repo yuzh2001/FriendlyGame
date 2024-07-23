@@ -20,9 +20,8 @@
           <div class="btn" @click="createRoom"><span>create</span></div>
         </div>
       </div>
-      <div class="create-room btn" @click="showRoomConfig = true"><span>create room</span></div>
-      <div class="btn" @click="joinRoom"><span>join room</span></div>
-      <div class="btn" @click="getRecord(0)"><span>test record</span></div>
+      <div class="create-room btn" @click="showRoomConfig = true"><span>创建房间</span></div>
+      <div class="btn" @click="joinRoom"><span>加入房间</span></div>
       <div class="btn" @click="selfPast7DayGame()">
         <span>7 day game history</span>
       </div>
@@ -217,6 +216,7 @@ export default class Home extends Vue {
 
 <style lang="less" scoped>
 .home-container {
+  background: radial-gradient(#00bf86, #006a55);
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -292,6 +292,7 @@ export default class Home extends Vue {
     margin: auto;
 
     span {
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
       font-size: 20px;
       font-weight: bold;
     }

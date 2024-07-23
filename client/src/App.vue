@@ -59,7 +59,7 @@ body {
     margin-top: 15px;
     span {
       color: #fff;
-      background-color: #00976e;
+      background-color: #13c293;
       border-radius: 8px;
       padding: 5px 20px;
       display: block;
