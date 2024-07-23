@@ -43,7 +43,7 @@ export class GameRecordController extends BaseController {
           g.winners = JSON.stringify([[winner]]);
         }
       });
-      commandList.forEach((c) => {
+      if(!body.showAll) commandList.forEach((c) => {
         if (c.userId !== state.user.user.userId) {
           c.handCard = '';
         }

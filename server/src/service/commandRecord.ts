@@ -47,7 +47,7 @@ export class CommandRecord implements ICommandRecordService {
   async findByGameID(gameID: number): Promise<ICommandRecord[]> {
     const result = await this.mysql.query(
       'SELECT\n' +
-        '\tcommand_record.counter,\n' +
+        '\tcommand_record.counter,command_record.create_time,\n' +
         '\tcommand_record.gameStatus,\n' +
         '\tcommand,\n' +
         '\thandCard,\n' +
@@ -60,7 +60,9 @@ export class CommandRecord implements ICommandRecordService {
         '\tcommand_record\n' +
         'INNER JOIN `user` ON `user`.id = command_record.userId\n' +
         'INNER JOIN player ON player.userId = command_record.userId\n' +
-        '\twhere command_record.gameId = ? and player.gameId = ?',
+        '\twhere command_record.gameId = ? and player.gameId = ?'+
+        `ORDER BY
+    command_record.create_time ASC;`,
       [gameID, gameID],
     );
     console.log(result, '=============command');

@@ -809,7 +809,7 @@ export default class Game extends Vue {
         gameId = this.gameList[index - 1].gameId;
       }
       console.log(gameId, 'ccc11');
-      const { data } = await service.commandRecordList(this.roomId, gameId);
+      const { data } = await service.commandRecordList(this.roomId, gameId, false);
       this.commandRecordList = data.commandList;
       this.showCommandRecord = true;
       console.log(data);

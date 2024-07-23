@@ -194,7 +194,7 @@ export default class Home extends Vue {
       }
       console.log(gameId, 'ccc11');
       gameId = this.gameList[index].gameId;
-      const { data } = await service.commandRecordList('889008', gameId);
+      const { data } = await service.commandRecordList('889008', gameId, true);
       this.commandList = data.commandList;
       this.showRecord = true;
       console.log(data);

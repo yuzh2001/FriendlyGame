@@ -110,13 +110,15 @@ export default class Player extends Vue {
 
     .action-command {
       top: 15 / 6.67vh;
-      left: 45 / 3.75vw;
+      left: 15vw;
       padding: 1px 8px;
       border-radius: 9px;
       color: #ffffff;
       background-color: #2c3e50;
       text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
       position: absolute;
+      z-index: 100;
+      font-size: 10px;
     }
 
     .card-style {

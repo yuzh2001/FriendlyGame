@@ -36,10 +36,10 @@ export default {
       url: '/game/buyIn',
       body: { buyInSize },
     }),
-  commandRecordList: (roomNumber: string, gameId: number) =>
+  commandRecordList: (roomNumber: string, gameId: number, showAll: boolean) =>
     request({
       url: '/game/record/find/commandRecord',
-      body: { roomNumber, gameId },
+      body: { roomNumber, gameId, showAll },
     }),
   gameRecordList: (roomNumber: string) =>
     request({
