@@ -9,10 +9,10 @@
         </div>
       </div>
       <div class="action-type">
-        <span class="action-btn" @click="action('fold')">fold</span>
-        <span class="action-btn" @click="action('check')" v-show="showActionBtn('check')">check</span>
-        <span class="action-btn" @click="action('call')" v-show="showActionBtn('call')">call</span>
-        <span class="action-btn" @click="otherSizeHandle()" v-show="showActionBtn('raise')">more</span>
+        <span class="action-btn" @click="action('fold')">Fold</span>
+        <span class="action-btn" @click="otherSizeHandle()" v-show="showActionBtn('raise')">More</span>
+        <span class="action-btn" @click="action('check')" v-show="showActionBtn('check')">Check</span>
+        <span class="action-btn" @click="action('call')" v-show="showActionBtn('call')">Call</span>
         <span class="action-btn action-btn--allin" @dblclick="action('allin')" v-show="!showActionBtn('raise')">
           ALLIN
         </span>
@@ -82,7 +82,7 @@ export default class Action extends Vue {
     }
     return size === this.baseSize * 2
       ? [1 * size, 2 * size, 3 * size, 4 * size]
-      : [0.5 * size, 0.75 * size, 1 * size, 2 * size];
+      : [0.2 * size, 0.3 * size, 0.5 * size, 1 * size];
   }
 
   get canActionSize() {
