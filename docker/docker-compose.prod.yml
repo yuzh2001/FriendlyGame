@@ -22,7 +22,7 @@ services:
 
   redis:
     container_name: "dzp-redis"
-    image: redis
+    image: redis:7.0
     command: /bin/sh -c 'redis-server --appendonly yes --requirepass 123456'
     restart: unless-stopped
     expose:
@@ -61,7 +61,7 @@ services:
     environment:
       NODE_ENV: production
     expose:
-      - 7001:7001
+      - 7001
     volumes:
       - ./data/server/logs:/root/logs
       - ./data/server/run:/app/run

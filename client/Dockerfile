@@ -5,6 +5,7 @@ COPY package.json ./
 COPY tsconfig.json ./
 COPY yarn.lock ./
 RUN yarn config set "strict-ssl" false -g
+RUN yarn config set registry https://registry.npmmirror.com
 RUN yarn install
 
 COPY . .

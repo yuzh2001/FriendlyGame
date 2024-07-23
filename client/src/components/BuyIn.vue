@@ -5,8 +5,8 @@
       <div class="buy-in-body">
         <div class="input-bd">
           <div class="input-name">
-            <span>buy in:&nbsp;</span>
-            <input type="number" v-model="value" disabled />
+            <span>Buy in:&nbsp;</span>
+            <input type="number" v-model="value" />
           </div>
         </div>
         <div class="btn"><span @click="buyIn">buy in</span></div>

@@ -3,6 +3,7 @@ FROM node:18-alpine AS build
 WORKDIR /app
 COPY . .
 
+RUN yarn config set registry https://registry.npmmirror.com
 RUN yarn
 
 ARG IDENTIFY_VERSION_KEY

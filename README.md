@@ -11,7 +11,6 @@ This is an online Texas Hold'em game, base on TypeScript,Egg,Node.js,Vue
 ```bash
 docker-compose -f docker-compose.prod.yml build --no-cache
 docker-compose -f docker-compose.prod.yml up -d
-docker-compose -f docker-compose.prod.yml build api --no-cache
 ```
 
 Build specify service:
