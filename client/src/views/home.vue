@@ -93,7 +93,7 @@ export default class Home extends Vue {
   public isHome = true;
   public isError = false;
   public isShort = false;
-  public smallBlind = 1;
+  public smallBlind = 5;
   public showRoomConfig = false;
   public showRecord = false;
   public commandList = [];
