@@ -57,7 +57,7 @@ export class GameRecordController extends BaseController {
         ...result,
       });
     } catch (e) {
-      this.fail('invalid game record');
+      this.fail('invalid game record'+e);
       console.log(e);
     }
   }

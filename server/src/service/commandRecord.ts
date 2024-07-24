@@ -60,7 +60,7 @@ export class CommandRecord implements ICommandRecordService {
         '\tcommand_record\n' +
         'INNER JOIN `user` ON `user`.id = command_record.userId\n' +
         'INNER JOIN player ON player.userId = command_record.userId\n' +
-        '\twhere command_record.gameId = ? and player.gameId = ?'+
+        '\twhere command_record.gameId = ? and player.gameId = ?\n'+
         `ORDER BY
     command_record.create_time ASC;`,
       [gameID, gameID],

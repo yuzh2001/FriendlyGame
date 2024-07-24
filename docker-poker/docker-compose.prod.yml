@@ -1,3 +1,4 @@
+name: "poker"
 version: "2"
 
 services:
